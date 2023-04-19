@@ -1,0 +1,54 @@
+\documentclass[11pt, letterpaper]{awesome-cv}
+%\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\usepackage{multicol}
+% Fonts Directory
+\fontdir[fonts/]
+
+% Highlight color
+\colorlet{awesome}{solarized-cyan}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+\colorlet{darktext}{solarized-violet}
+\colorlet{text}{solarized-base00}
+\colorlet{graytext}{solarized-green}
+\colorlet{lighttext}{solarized-blue}
+\colorlet{sectiondivider}{solarized-green}
+
+% Highlight section titles
+\setbool{acvSectionColorHighlight}{true}
+
+% Personal Information
+\name{Phillip}{Duncan}
+\position{Production Engineer{\enskip\cdotp\enskip}Systems Engineer}
+\address{Seattle, Washington}
+\mobile{(+1) 206 565-6399}
+\email{pduncan5@gmail.com}
+\github{flpdnc}
+\linkedin{phillipsduncan}
+
+\begin{document}
+
+\makecvheader
+
+\makecvfooter
+  {\today}
+  {Phillip Duncan}
+  {\thepage}
+
+\input{summary.tex}
+\input{experience.tex}
+%\pagebreak
+%  \input{projects.tex}
+%  \input{publications.tex}
+%  \input{honors.tex}
+\begin{multicols}{2}
+  \input{skills.tex}
+  \input{skills2.tex}
+%  \input{education.tex}
+\end{multicols}
+
+\end{document}
+
+
